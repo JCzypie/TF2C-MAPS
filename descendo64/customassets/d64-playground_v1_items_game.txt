@@ -1,0 +1,198 @@
+"Descendo64MapWeapons"
+{
+	"items"
+	{
+		"6408"
+		{
+			"name"						"TF_WEAPON_LUNGEGUNBACK"
+			"item_class"				"tf_weapon_revolver"
+			"item_slot"					"primary"
+			"anim_slot"					"secondary"
+			"show_in_armory"			"1"
+			
+			"item_iconname"				"lungegunback"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			
+			"propername"				"1"
+			"item_name_color"			"255 255 255 255"
+			"item_name"					"Lungegun (B)"
+			"item_type_name"			"Movement Tool"
+			"item_description"			"Lunge Yourself Backwards"
+			"item_logname"				"lungegunback"
+			
+			"image_inventory"			"descendo/backpack/lungegunback"
+			"model_world"				"models/weapons/w_models/w_revolver.mdl"
+			"model_player"				"models/weapons/v_models/v_revolver_spy.mdl"
+			"attach_to_hands"			"2"
+			
+			"used_by_classes"
+			{
+				"scout"					"1"
+				"soldier"				"1"
+				"pyro"					"1"
+				"demoman"				"1"
+				"heavy"					"1"
+				"engineer"				"1"
+				"medic"					"1"
+				"sniper"				"1"
+				"spy"					"1"
+			}
+			
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"0 0 0"
+				"hidden separator"						"1"
+			}
+			"attributes"
+			{
+				"apply self knockback"
+				{
+					"attribute_class"	"apply_self_knockback"
+					"value"				"320"
+				}
+				"no ammo hidden" 
+				{
+					"attribute_class"	"energy_weapon_no_ammo"
+					"value"				"1"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"		"allowed_in_medieval_mode"
+					"value"					"1"
+				}
+				
+				"hidden separator"		"1"
+				
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.1"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.15"
+				}
+				"no double jump"
+				{
+					"attribute_class"		"set_scout_doublejump_disabled"
+					"value"					"1"
+				}
+				"override mult deploy weapon time animation"
+				{
+					"attribute_class"	"override_mult_deploy_time_anim"
+					"value"				".7"
+				}
+				"single wep deploy time hidden"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"				".1"
+				}
+				"Reload time decreased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"				".33"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
+		"6409"
+		{
+			"name"						"TF_WEAPON_LUNGEGUNFORWARD"
+			"item_class"				"tf_weapon_revolver"
+			"item_slot"					"primary"
+			"anim_slot"					"secondary"
+			"show_in_armory"			"0"
+			
+			"item_iconname"				"lungegunforward"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			
+			"propername"				"1"
+			"item_name_color"			"255 255 255 255"
+			"item_name"					"Lungegun (F)"
+			"item_type_name"			"Movement Tool"
+			"item_description"			"Lunge Yourself Forward"
+			"item_logname"				"lungegunforward"
+			
+			"image_inventory"			"descendo/backpack/forward"
+			"model_world"				"models/weapons/w_models/w_revolver.mdl"
+			"model_player"				"models/weapons/v_models/v_revolver_spy.mdl"
+			"attach_to_hands"			"2"
+			
+			"used_by_classes"
+			{
+				"scout"					"1"
+				"soldier"				"1"
+				"pyro"					"1"
+				"demoman"				"1"
+				"heavy"					"1"
+				"engineer"				"1"
+				"medic"					"1"
+				"sniper"				"1"
+				"spy"					"1"
+			}
+			
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"0 0 0"
+				"hidden separator"						"1"
+			}
+			"attributes"
+			{
+				"apply self knockback"
+				{
+					"attribute_class"	"apply_self_knockback"
+					"value"				"-320"
+				}
+				"no ammo hidden" 
+				{
+					"attribute_class"	"energy_weapon_no_ammo"
+					"value"				"1"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"		"allowed_in_medieval_mode"
+					"value"					"1"
+				}
+				
+				"hidden separator"		"1"
+				
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.1"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.15"
+				}
+				"no double jump"
+				{
+					"attribute_class"		"set_scout_doublejump_disabled"
+					"value"					"1"
+				}
+				"override mult deploy weapon time animation"
+				{
+					"attribute_class"	"override_mult_deploy_time_anim"
+					"value"				".7"
+				}
+				"single wep deploy time hidden"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"				".1"
+				}
+				"Reload time decreased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"				".33"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
+	}
+}

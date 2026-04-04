@@ -1,0 +1,997 @@
+"Descendo64MapWeapons"
+{
+	"items"
+	{
+		//VANILLA OVERRIDES
+		"8"
+		{
+			"name"						"TF_WEAPON_BONESAW"
+			"prefab"					"weapon_bonesaw"
+			"baseitem"					"1"
+			"item_description"			"#TF_Weapon_Bonesaw_Desc"
+			"model_world"				"models/weapons/w_models/w_bonesaw.mdl"
+			"model_player"				"models/weapons/v_models/v_bonesaw_medic.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"ubercharge rate penalty on wearer"
+				{
+					"attribute_class"	"mult_medigun_uberchargerate_wearer"
+					"value"				"0.7"
+				}
+			}
+		}
+		"25"
+		{
+			"name"						"TF_WEAPON_PDA_ENGINEER_BUILD"
+			"prefab"					"weapon_pda"
+			"baseitem"					"1"
+			"item_description"			"#TF_Weapon_PDA_Engineer_Builder_Desc"
+			"model_world"				"models/weapons/w_models/w_builder.mdl"
+			"model_player"				"models/weapons/v_models/v_builder_engineer.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"				"1"
+				}
+			}
+		}
+		"26"
+		{
+			"name"						"TF_WEAPON_PDA_ENGINEER_DESTROY"
+			"prefab"					"weapon_pda_destroy"
+			"baseitem"					"1"
+			"model_world"				"models/weapons/w_models/w_pda_engineer.mdl"
+			"model_player"				"models/weapons/v_models/v_pda_engineer.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"				"1"
+				}
+			}
+		}
+		"28"
+		{
+			"name"						"TF_WEAPON_BUILDER"
+			"prefab"					"weapon_builder"
+			"baseitem"					"1"
+			"model_world"				"models/weapons/w_models/w_toolbox.mdl"
+			"model_player"				"models/weapons/v_models/v_wrench_engineer.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+			
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"				"1"
+				}
+				
+				"engy sentry knockback penalty"
+				{
+					"attribute_class"	"mult_sentry_knockback"
+					"value"				"0"
+				}
+				
+				"engy sentry damage penalty"
+				{
+					"attribute_class"	"mult_engy_sentry_damage"
+					"value"				".33"
+				}
+				
+				"engy building health penalty"
+				{
+					"attribute_class"	"mult_engy_building_health"
+					"value"				".77"
+				}
+				
+				"mod sentrygun cost"
+				{
+					"attribute_class"	"mod_sentrygun_cost"
+					"value"				".77"
+				}
+				
+				"engy sentry radius increased"
+				{
+					"attribute_class"	"mult_sentry_range"
+					"value"				".5"
+				}
+				
+				"buildings upgrade cost bonus"
+				{
+					"attribute_class"	"add_buildings_upgrade_cost"
+					"value"				"-100"
+				}
+				
+				"buildings max level penalty"
+				{
+					"attribute_class"	"add_buildings_max_level"
+					"value"				"-1"
+				}
+				
+				"engineer dispenser build rate multiplier"
+				{
+					"attribute_class"	"dispenser_build_rate_multiplier"
+					"value"				"2"
+				}
+				
+				"engineer teleporter build rate multiplier"
+				{
+					"attribute_class"	"teleporter_build_rate_multiplier"
+					"value"				"2"
+				}
+				
+			}
+		}
+		"31"
+		{
+			"name"						"TF_WEAPON_BUILDER_SPY"
+			"prefab"					"weapon_sapper"
+			"baseitem"					"1"
+			"item_description"			"#TF_Weapon_Spy_Sapper_Desc"
+			"model_world"				"models/weapons/w_models/w_sapper.mdl"
+			"model_player"				"models/weapons/v_models/v_sapper_spy.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"				"1"
+				}
+			}
+		}
+		"34"
+		{
+			"name"						"The Ubersaw"
+			"prefab"					"valve weapon_bonesaw"
+			"item_logname"				"ubersaw"
+			"item_iconname"				"ubersaw"
+			"show_in_armory"			"1"
+			"item_type_name"			"#TF_Weapon_Syringe"
+			"item_name"					"#TF_Unique_Achievement_Bonesaw1"
+			"item_description"			"#TF_Unique_Achievement_Bonesaw1_Desc"
+			"propername"				"1"
+			"image_inventory"			"backpack/weapons/w_models/w_syringe"
+			"model_world"				"models/weapons/w_models/w_syringe.mdl"
+			"model_player"				"models/weapons/v_models/v_syringe_medic.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"add uber charge on hit"
+				{
+					"attribute_class"	"add_onhit_ubercharge"
+					"value"				"0.25"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"-10"
+				}
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"				"1"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value"				"1"
+				}
+				"ubercharge rate penalty on wearer"
+				{
+					"attribute_class"	"mult_medigun_uberchargerate_wearer"
+					"value"				"0"
+				}
+			}
+			"xifier_class_remap"		"ubersaw"
+			"mouse_pressed_sound"		"#ui/item_knife_small_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
+		"35"
+		{
+			"name"						"The Flare Gun"
+			"prefab"					"valve weapon_flaregun"
+			"model_world"				"models/weapons/w_models/w_flaregun.mdl"
+			"model_player"				"models/weapons/v_models/v_flaregun_pyro.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"				"1"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value"				"1"
+				}
+				"single wep deploy time hidden"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"				"0.85"
+				}
+				"override mult deploy weapon time animation"
+				{
+					"attribute_class"	"override_mult_deploy_time_anim"
+					"value"				"1"
+				}
+				"no ammo hidden" 
+				{
+					"attribute_class"	"energy_weapon_no_ammo"
+					"value"				"1"
+				}
+				"crit mod disabled hidden"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+			}
+		}
+		"47"
+		{
+			"name"						"Shock Therapy"
+			"tags"
+			{
+				"can_deal_damage"		"1"
+			}
+			"item_class"				"tf_weapon_taser"
+			"item_type_name"			"#TF_Weapon_Taser"
+			"item_name"					"#TF_Weapon_ShockTherapy"
+			"item_description"			"#TF_Weapon_ShockTherapy_Desc"
+			"item_slot"					"melee"
+			"image_inventory"			"backpack/weapons/c_models/c_lightningmelee/c_lightningmelee"
+			"show_in_armory"			"1"
+			"item_logname"				"taser"
+			"item_iconname"				"taser"
+			"propername"				"1"
+			"model_world"				"models/weapons/w_models/w_lightningmelee.mdl"
+			"model_player"				"models/weapons/v_models/v_lightningmelee.mdl"
+			"attach_to_hands"			"2"
+			"extra_wearable"			"models/player/items/shock_therapy_wearable.mdl"
+            "extra_wearable_hide_on_active"        "1"
+			"used_by_classes"
+			{
+				"medic"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"
+			}
+			"attributes"
+			{
+				"melee range multiplier"
+				{
+					"attribute_class"	"melee_range_multiplier"
+					"value"				"1.7"
+				}
+				"melee bounds multiplier"
+				{
+					"attribute_class"	"melee_bounds_multiplier"
+					"value"				"1.55"
+				}
+				"crit mod disabled hidden"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				"damage bonus hidden"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"1.54"
+				}
+				"ragdolls become ash"
+				{
+					"attribute_class"	"ragdolls_become_ash"
+					"value"				"1"
+				}
+				"heal on smack DISPLAY ONLY"
+				{
+					"attribute_class"	"heal_on_smack_DISPLAY_ONLY"
+					"value"				"1"
+				}
+				"heal rate penalty"
+				{
+					"attribute_class"	"mult_medigun_healrate"
+					"value"				"0.85"
+				}
+				"minicrit vs wet players"
+				{
+					"attribute_class"	"minicrit_vs_wet_players"
+					"value"				"1"
+				}
+				"ubercharge rate penalty on wearer"
+				{
+					"attribute_class"	"mult_medigun_uberchargerate_wearer"
+					"value"				"0.75"
+				}
+				"effect bar recharge rate increased"
+				{
+					"attribute_class"	"effectbar_recharge_rate"
+					"value"				".25"
+				}
+			}
+			"visuals"
+			{
+				"sound_taunt"			"Taunt.MedicViolinUber"
+			}
+			"mouse_pressed_sound"		"#ui/item_taser_pickup.wav"
+			"drop_sound"				"#ui/item_taser_drop.wav"
+		}
+		
+		"55"
+		{
+			"name"						"Brick"
+			"item_class"				"tf_weapon_throwable"
+			"item_slot"					"secondary"
+			"anim_slot"					"secondary2"
+			"show_in_armory"			"1"
+			"testing"					"1"
+			"item_name"					"#TF_Weapon_Brick"
+			"item_type_name"			"#TF_Weapon_Throwable"
+			"item_description"			"#TF_Weapon_Brick_Desc"
+			"image_inventory"			"backpack/weapons/w_models/w_brick"
+			"item_logname"				"brick"
+			"item_iconname"				"brick"
+			"model_player"				"models/weapons/v_models/v_brick_scout.mdl"
+			"model_world"				"models/weapons/w_models/w_brick_scout.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"attributes"
+			{
+
+				"effect bar recharge rate increased"
+				{
+					"attribute_class"	"effectbar_recharge_rate"
+					"value"				".7"
+				}
+				"brick mini-crit long range"
+				{
+					"attribute_class"	"mod_brick_minicrit_over_time"
+					"value"				"0.6"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"				"1"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_pack_pickup.wav"
+			"drop_sound"				"#ui/item_pack_drop.wav"
+		}
+		"56"
+		{
+			"name"						"Rejuvenator"
+			"item_class"				"tf_weapon_heallauncher"
+			"tags"
+			{
+				"bots_cant_use"			"1"
+			}
+            "show_in_armory"			"1"
+			"item_name"					"#TF_Weapon_HealLauncher"
+			"item_type_name"			"#TF_Weapon_HealLauncher_Type"
+			"item_description"			"#TF_Weapon_HealLauncher_Desc"
+			"item_logname"				"nader"
+			"item_iconname"				"nader"
+			"item_slot"					"secondary"
+			"anim_slot"					"item1"
+			"propername"				"1"
+			"model_world"				"models/weapons/w_models/w_nader.mdl"
+			"model_player"				"models/weapons/v_models/v_nader.mdl"
+			"image_inventory"			"backpack/weapons/w_models/w_nader"
+			"extra_wearable" 			"models/player/items/nader_backpack.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"medic"					"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -12"
+				"class select override vcd"				"class_select_nader"
+			}
+			"attributes"
+			{
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"				"1"
+				}
+				
+				"hidden separator"		"1"
+				
+				"medigun charge is megaheal"
+				{
+					"attribute_class"	"set_charge_type"
+					"value"				"0"
+				}
+				"clip size penalty hidden"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.5"
+				}
+				"apply heal on explosion"
+				{
+					"attribute_class"	"apply_heal_explosion"
+					"value"				"4"
+				}
+				"explode on world"
+				{
+					"attribute_class"	"set_detonate_mode"
+					"value"				"3"
+				}
+				"residual heal rate"
+				{
+					"attribute_class"	"residual_heal_rate"
+					"value"				"8"
+				}
+				"residual heal duration"
+				{
+					"attribute_class"	"residual_heal_duration"
+					"value"				"4"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"				"2.4"
+				}
+				"no ammo hidden" 
+				{
+					"attribute_class"	"energy_weapon_no_ammo"
+					"value"				"1"
+				}
+				"scattergun no reload single"
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"	
+					"value"				"1"
+				}
+
+			}
+			"visuals"
+			{
+				"muzzle_flash"			"muzzle_tranq"
+				"sound_reload"			"Weapon_HealLauncher.Charge"
+				
+				"player_bodygroups"
+				{
+					"medic_backpack"			"1"
+				}
+
+				"animation_replacement"
+				{
+					"ACT_MP_RELOAD_STAND"				"ACT_MP_RELOAD_STAND_ITEM1"
+					"ACT_MP_RELOAD_CROUCH"				"ACT_MP_RELOAD_CROUCH_ITEM1"
+					"ACT_MP_RELOAD_SWIM"				"ACT_MP_RELOAD_SWIM_ITEM1"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_metal_slosh_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+		}
+		
+		//VANILLA OVERRIDES END
+		//D64 WEAPONS
+		
+		"6412"
+		{
+			"name"						"TF_WEAPON_LUNGEGUN"
+			"item_class"				"tf_weapon_revolver"
+			"item_slot"					"primary"
+			"anim_slot"					"secondary"
+			"show_in_armory"			"1"
+			"used_by_classes"
+			{
+				"scout"					"1"
+				"soldier"				"1"
+				"pyro"					"1"
+				"demoman"				"1"
+				"heavy"					"1"
+				"medic"					"1"
+				"sniper"				"1"
+				"spy"					"1"
+			}
+			"propername"				"1"
+			"item_name_color"			"255 255 255 255"
+			"item_name"					"Lungegun"
+			"item_type_name"			"Movement Tool"
+			"item_description"			"Strong Knockback"
+			"item_logname"				"d64_lungegun"
+			"item_iconname"				"lungegun"
+			"image_inventory"			"backpack/weapons/w_models/w_revolver"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+			"model_world"				"models/weapons/w_models/w_revolver.mdl"
+			"model_player"				"models/weapons/v_models/v_revolver_spy.mdl"
+			"attach_to_hands"			"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"0 0 0"
+			}
+			
+			"attributes"
+			{
+				
+				"apply self knockback"
+				{
+					"attribute_class"	"apply_self_knockback"
+					"value"				"375"
+				}
+				
+				"health regen"
+				{
+					"attribute_class"	"add_health_regen"
+					"value"				"10"
+				}
+				
+				"damage penalty hidden"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.125"
+				}
+				
+				"dmg bonus vs buildings hidden"
+				{
+					"attribute_class"	"mult_dmg_vs_buildings"
+					"value"				"2"
+				}
+				
+				"clip size penalty hidden"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.45"
+				}
+				
+				"clipsize increase on kill"
+				{
+					"attribute_class"	"clipsize_increase_on_kill"
+					"value"				"0"
+				}
+				
+				"set reload single"
+				{
+					"attribute_class"	"set_reload_single"
+					"value"				"1"
+				}
+				
+				"is_passive_weapon"
+				{
+					"attribute_class"	"is_passive_weapon"
+					"value"				"1"
+				}
+
+				"no ammo hidden" 
+				{
+					"attribute_class"	"energy_weapon_no_ammo"
+					"value"				"1"
+				}
+				
+				"hidden separator"		"1"
+				
+				"Reload time decreased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"				".7"
+				}
+
+				"bullets per shot bonus"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value"	"6"
+				}
+				
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"2.25"
+				}
+				
+				"punch angle mod add hidden"
+				{
+					"attribute_class"	"punch_angle_mod"
+					"value"				"2"
+				}
+				
+				"weapon enemy knockback mod mult hidden"
+				{
+					"attribute_class"	"weapon_enemy_knockback_mod"
+					"value"				"0"
+				}
+				
+				"medic regen penalty"
+				{
+					"attribute_class"	"medic_regen"
+					"value"				"5"
+				}
+				
+				"override mult deploy weapon time animation"
+				{
+					"attribute_class"	"override_mult_deploy_time_anim"
+					"value"				".75"
+				}
+				
+				"single wep deploy time hidden"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"				".75"
+				}
+				
+				"crit mod disabled"	
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"					"1"
+				}
+				
+			}
+			
+		}
+		
+		"6413"
+		{
+			"name"	"TF_WEAPON_GRASSSWORD"
+			"item_class"	"tf_weapon_wrench"
+			"item_slot"	"melee"
+			"anim_slot"	"melee"
+			"show_in_armory"	"0"
+			"used_by_classes"
+			{
+				"scout"					"1"
+				"soldier"				"1"
+				"pyro"					"1"
+				"demoman"				"1"
+				"heavy"					"1"
+				"engineer"				"1"
+				"medic"					"1"
+				"sniper"				"1"
+				"spy"					"1"
+			}
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+			"model_world"				"models/weapons/w_models/w_machete.mdl"
+			"model_player"				"models/weapons/v_models/v_machete_sniper.mdl"
+			"attach_to_hands"			"2"
+			
+			"propername"				"1"
+			"item_name_color"			"255 255 255 255"
+			"item_name"					"Grass Sword"
+			"item_type_name"			"Elemental Sword"
+			"item_description"			"Constricts Players"
+			"item_logname"				"d64_sword_grass"
+			"item_iconname"				"sword_grass"
+			"image_inventory"			"d64/backpack/sword_grass"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"96"
+			
+			"static_attrs"
+			{
+			
+				"min_viewmodel_offset"					"0 0 0"
+				
+				"hidden separator"						"1"
+				
+			}
+			
+			"attributes"
+			{
+				
+				"add condition on hit weapon"
+				{
+					"attribute_class"	"add_onhit_addcond_weapon"
+					"value"				"41 3"
+				}
+				
+				"heal on hit for slowfire"
+				{
+					"attribute_class"	"add_onhit_addhealth"
+					"value"				"35"
+				}
+				
+				"particle on melee hit"
+				{
+					"attribute_class"	"particle_on_melee_hit"
+					"value"				"taunt_headbutt_impact_ring"
+				}
+				
+				"hidden separator"		"1"
+				
+				"override mult deploy weapon time animation"
+				{
+					"attribute_class"	"override_mult_deploy_time_anim"
+					"value"				".75"
+				}
+				
+				"single wep deploy time hidden"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"				".75"
+				}
+				
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"					"1"
+				}
+				
+			}
+			
+		}
+		
+		"6414"
+		{
+			"name"	"TF_WEAPON_WATERSWORD"
+			"item_class"	"tf_weapon_wrench"
+			"item_slot"	"melee"
+			"anim_slot"	"melee"
+			"show_in_armory"	"0"
+			"used_by_classes"
+			{
+				"scout"					"1"
+				"soldier"				"1"
+				"pyro"					"1"
+				"demoman"				"1"
+				"heavy"					"1"
+				"engineer"				"1"
+				"medic"					"1"
+				"sniper"				"1"
+				"spy"					"1"
+			}
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+			"model_world"				"models/weapons/w_models/w_machete.mdl"
+			"model_player"				"models/weapons/v_models/v_machete_sniper.mdl"
+			"attach_to_hands"			"2"
+			
+			"propername"				"1"
+			"item_name_color"			"255 255 255 255"
+			"item_name"					"Water Sword"
+			"item_type_name"			"Elemental Sword"
+			"item_description"			"Shoot Towards Target"
+			"item_logname"				"d64_sword_water"
+			"item_iconname"				"sword_water"
+			"image_inventory"			"d64/backpack/sword_water"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"96"
+			
+			"static_attrs"
+			{
+			
+				"min_viewmodel_offset"					"0 0 0"
+				
+				"hidden separator"						"1"
+				
+			}
+			
+			"attributes"
+			{
+				
+				"apply self knockback on swing"
+				{
+					"attribute_class"	"apply_self_knockback_swing"
+					"value"				"-375"
+				}
+				
+				"add condition on swing"
+				{
+					"attribute_class"	"add_onswing_addcond"
+					"value"				"30	3"
+				}
+				
+				"earthquake attack active"
+				{
+					"attribute_class"	"earthquake_attack_active"
+					"value"				"192.0 40 2"
+				}
+				
+				"melee range multiplier"
+				{
+					"attribute_class"	"melee_range_multiplier"
+					"value" "2"
+				}
+				
+				"melee bounds multiplier"
+				{
+					"attribute_class"	"melee_bounds_multiplier"
+					"value"				".2"
+				}
+				
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"1.5"
+				}
+				
+				"particle on melee hit"
+				{
+					"attribute_class"	"particle_on_melee_hit"
+					"value"				"water_splash01_cluster"
+				}
+				
+				"hidden separator"		"1"
+				
+				"override mult deploy weapon time animation"
+				{
+					"attribute_class"	"override_mult_deploy_time_anim"
+					"value"				".75"
+				}
+				
+				"single wep deploy time hidden"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"	".75"
+				}
+				
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				
+				"allowed in medieval mode"
+				{
+					"attribute_class"		"allowed_in_medieval_mode"
+					"value"					"1"
+				}
+				
+			}
+			
+		}
+		"6417"
+		{
+			"name"						"TF_WEAPON_LUNGEGUNSECONDARY"
+			"item_class"				"tf_weapon_shotgun"
+			"item_slot"					"primary"
+			"anim_slot"					"primary"
+			"show_in_armory"			"1"
+			"used_by_classes"
+			{
+				"engineer"				"1"
+			}
+			"propername"				"1"
+			"item_name_color"			"255 255 255 255"
+			"item_name"					"Lungegun"
+			"item_type_name"			"Movement Tool"
+			"item_description"			"Lunge Yourself"
+			"item_logname"				"d64_lungegunsecondary"
+			"item_iconname"				"lungegun"
+			"image_inventory"			"backpack/weapons/w_models/w_revolver"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			
+			"mouse_pressed_sound"		"#ui/item_metal_weapon_pickup.wav"
+			"drop_sound"				"#ui/item_metal_weapon_drop.wav"
+			"model_world"				"models/weapons/w_models/w_revolver.mdl"
+			"model_player"				"models/weapons/v_models/v_revolver_spy.mdl"
+			"attach_to_hands"			"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"0 0 0"
+			}
+
+			"attributes"
+			{
+				
+				"apply self knockback"
+				{
+					"attribute_class"	"apply_self_knockback"
+					"value"				"375"
+				}
+				
+				"health regen"
+				{
+					"attribute_class"	"add_health_regen"
+					"value"				"10"
+				}
+				
+				"damage penalty hidden"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				".8"
+				}
+				
+				"clip size penalty hidden"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.45"
+				}
+				
+				"no ammo hidden" 
+				{
+					"attribute_class"	"energy_weapon_no_ammo"
+					"value"				"1"
+				}
+				
+				"hidden separator"		"1"
+				
+				"dmg bonus vs buildings hidden"
+				{
+					"attribute_class"	"mult_dmg_vs_buildings"
+					"value"				"2"
+				}
+				
+				"bullets per shot penalty"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value"	".6"
+				}
+				
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				".6"
+				}
+				
+				"Reload time decreased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"				"1.25"
+				}
+				
+				"weapon enemy knockback mod mult hidden"
+				{
+					"attribute_class"	"weapon_enemy_knockback_mod"
+					"value"				"0"
+				}
+				
+				"punch angle mod add hidden"
+				{
+					"attribute_class"	"punch_angle_mod"
+					"value"				"4"
+				}
+				
+				"override mult deploy weapon time animation"
+				{
+					"attribute_class"	"override_mult_deploy_time_anim"
+					"value"				".75"
+				}
+				
+				"single wep deploy time hidden"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"				".75"
+				}
+				
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}
+				
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"					"1"
+				}
+				
+			}
+			
+		}
+		
+	}
+}
