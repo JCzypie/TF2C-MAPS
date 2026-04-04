@@ -1,0 +1,21 @@
+"Entities"
+{
+	"trackinfo"
+	{
+		"track0"
+		{
+			"map"		"arena_patty_b8"
+			"printname"	"Patty Commentary"
+			"description"	"Commentary on the Patty map."
+		}	
+	}
+	"entity"
+	{
+		"classname" "point_commentary_node"
+		"origin" "0 1408 256"
+		"angles" "0 0 0"
+		"commentaryfile" "#patty/commentarypatty.wav"
+		"printname" "Map Design"
+		"speakers" "zypie"
+	}
+}
